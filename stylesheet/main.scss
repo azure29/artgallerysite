@@ -5,9 +5,6 @@ body {
 	font: normal 14px "FuturaBook", Arial, Helvetica, sans-serif;
 	margin: 0;
 	margin-top: 60px;
-	// @include  breakpoint(small) {
-	// 	background-color: blue;
-	// }
 }
 .nav-wrapper {
 	width: 100%;
@@ -97,6 +94,11 @@ body {
  .art-photo {
  	width: 348px;
  	height: 503px;
+ 		&:hover {
+ 			opacity: .6;
+ 			border-radius: 50%;
+ 			border: 2px solid #fff;
+ 		}
  }
  .art-title {
  	display: block;	
@@ -109,11 +111,16 @@ body {
     text-align: center;
     border-bottom: 1px solid #E6E6E6;
     padding-bottom: 26px;
+    
+    	&:hover {
+    		transform: skew(-25deg) skew(40deg);
+    		font-weight: 300px;
+    		letter-spacing: 5px;
+    	}
  }
  #page-about {
  	width: 100%;
  		blockquote {
- 			// font-family: Proxima Nova Bold,serif;
  			font-family: "FuturaBook", Arial, Helvetica, sans-serif;
 		    font-size: 15px;
 		    letter-spacing: 1px;
@@ -133,24 +140,12 @@ body {
  	}
  	.contact-icons {
 	 border-radius: 50%;
-	//  transform: scale(1.15);
-	// transition-property: all 2s, 2s;
-// 	 border: 1px solid red;
-// 	 opacity: 1;
-	 // transform: scale(1.15);
-	 // transition-property: all;
-// transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 		&:hover {
-			// border: 1px solid #950e92;
-			opacity: 1.5;
-			border: 5px solid #e3162b;
+			opacity: .5;
+			border: 1px solid #e3162b;
 			transform: scale(1.15);
-			transition-property: all 2s, 2s;
 		}
  	}
- 	// .contact-email {
-		// 	// width: 80px;
-		// }
  	h5 {
  		color: #e3162b;
 		font: normal 14px Helvetica, Arial, sans-serif;
@@ -171,10 +166,15 @@ body {
 		position: relative;
 		top: 300px;
 		right: 300px;
-		// transform: scale(2, 1);
 			a {
 				text-decoration: none;
 				transform: scale(2, 1);
+				color: #000;
+				font: normal 14px Helvetica, Arial, sans-serif;
+				letter-spacing: 1px;
+				font-weight: 700px;
+				font-size: 20px;
+				text-transform: uppercase;
 				&:hover {
 					color: #e3162b;
 				}

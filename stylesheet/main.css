@@ -85,6 +85,10 @@ body {
 .art-photo {
   width: 348px;
   height: 503px; }
+  .art-photo:hover {
+    opacity: .6;
+    border-radius: 50%;
+    border: 2px solid #fff; }
 
 .art-title {
   display: block;
@@ -97,6 +101,10 @@ body {
   text-align: center;
   border-bottom: 1px solid #E6E6E6;
   padding-bottom: 26px; }
+  .art-title:hover {
+    transform: skew(-25deg) skew(40deg);
+    font-weight: 300px;
+    letter-spacing: 5px; }
 
 #page-about {
   width: 100%; }
@@ -119,10 +127,9 @@ body {
   .page-contact-icon .contact-icons {
     border-radius: 50%; }
     .page-contact-icon .contact-icons:hover {
-      opacity: 1.5;
-      border: 5px solid #e3162b;
-      transform: scale(1.15);
-      transition-property: all 2s, 2s; }
+      opacity: .5;
+      border: 1px solid #e3162b;
+      transform: scale(1.15); }
   .page-contact-icon h5 {
     color: #e3162b;
     font: normal 14px Helvetica, Arial, sans-serif;
@@ -143,7 +150,13 @@ body {
     right: 300px; }
     .page-contact-icon h4 a {
       text-decoration: none;
-      transform: scale(2, 1); }
+      transform: scale(2, 1);
+      color: #000;
+      font: normal 14px Helvetica, Arial, sans-serif;
+      letter-spacing: 1px;
+      font-weight: 700px;
+      font-size: 20px;
+      text-transform: uppercase; }
       .page-contact-icon h4 a:hover {
         color: #e3162b; }
 
